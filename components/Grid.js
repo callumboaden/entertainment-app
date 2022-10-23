@@ -10,8 +10,12 @@ export default function Grid({ items, toggleBookmark }) {
 
   return (
     <section style={style}>
-      {items.map((item) => (
-        <Thumbnail item={item} toggleBookmark={toggleBookmark}></Thumbnail>
+      {items.map((item, i) => (
+        <Thumbnail
+          key={i}
+          item={item}
+          toggleBookmark={toggleBookmark}
+        ></Thumbnail>
       ))}
     </section>
   );

@@ -24,8 +24,12 @@ export default function Slider({ items, toggleBookmark }) {
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
       >
-        {items.map((item) => (
-          <SliderCard item={item} toggleBookmark={toggleBookmark}></SliderCard>
+        {items.map((item, i) => (
+          <SliderCard
+            key={i}
+            item={item}
+            toggleBookmark={toggleBookmark}
+          ></SliderCard>
         ))}
       </motion.div>
     </motion.div>

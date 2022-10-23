@@ -41,7 +41,7 @@ export default function Thumbnail({ item, toggleBookmark, type }) {
           height={200}
           layout="responsive"
         />
-        <div class={styles.icon}>{bookmarkIcon}</div>
+        <div className={styles.icon}>{bookmarkIcon}</div>
       </div>
       <div className={styles.details}>
         <span>{item.year}</span>
