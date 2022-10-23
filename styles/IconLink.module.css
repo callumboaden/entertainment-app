@@ -1,0 +1,7 @@
+.icon path {
+    transition: .25s;
+}
+
+.icon:hover path {
+    fill: #FC4747 !important;
+}

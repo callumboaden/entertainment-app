@@ -1,0 +1,17 @@
+input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    padding-bottom: .75rem;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    caret-color: #FC4747;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #5A698F;
+}
