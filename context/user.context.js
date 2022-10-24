@@ -5,6 +5,8 @@ import { APP_ID } from "../realm/constants.js";
 // Creating a Realm App Instance
 const app = new App(APP_ID);
 
+console.log(app);
+
 // Creating a user context to manage and access all the user related functions
 // across different components and pages.
 export const UserContext = createContext();
