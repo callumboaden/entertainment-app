@@ -4,7 +4,7 @@ import Logo from "../../public/assets/logo.svg";
 export default function RegisterPage() {
   return (
     <Layout>
-      <div className={styles.container}>
+      <div>
         <Logo />
 
         <form>
