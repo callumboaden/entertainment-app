@@ -30,7 +30,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     loadUser();
-  }, []);
+  });
 
   const onSubmit = async (e) => {
     try {
@@ -73,7 +73,8 @@ export default function LoginPage() {
           <input type="submit" value="Login" />
         </form>
         <p>
-          Don't have an account? <Link href="/account/register">Register</Link>
+          Don&apos;t have an account?
+          <Link href="/account/register">Register</Link>
         </p>
       </div>
     </Layout>
