@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout";
+import Logo from "../../public/assets/logo.svg";
 
 export default function RegisterPage() {
   return (
