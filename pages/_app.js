@@ -2,7 +2,7 @@ import "../styles/globals.css";
 
 import { useState } from "react";
 import data from "../data.json";
-
+import { UserProvider } from "../context/user.context";
 import Transition from "../components/Transition";
 
 function MyApp({ Component, pageProps }) {
@@ -26,13 +26,15 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Transition>
-      <Component
-        {...pageProps}
-        data={state}
-        toggleBookmark={toggleBookmark}
-        handleSearch={handleSearch}
-        query={query}
-      />
+      <UserProvider>
+        <Component
+          {...pageProps}
+          data={state}
+          toggleBookmark={toggleBookmark}
+          handleSearch={handleSearch}
+          query={query}
+        />
+      </UserProvider>
     </Transition>
   );
 }
